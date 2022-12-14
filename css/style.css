@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "footer"
+  }
+
+body > nav {
+    grid-area: nav;
+    justify-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px 0 30px;
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  nav > a {
+    margin: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+  }
+p {
+  font-size: x-large;
+}
+#links {
+  position: sticky;
+}
+
+
+/* Place text in the middle of the image */
+.hero-text {
+  font-family: 'Rubik Vinyl', cursive;
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  color: white;
+  background-color: rgba(15, 13, 13, .4);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px hsla(0deg, 0%, 0%, 0.5);
+}
+
+span {
+  align-self: stretch;
+}
+/* resume pdf */
+
+.pdf {
+  visibility: hidden;
+}
+
+h1, p {
+    color: white;
+}
+
+@media screen and (max-width: 1250px) {
+  .parallax, .parallax2, .parallax3{
+    width: 92%;
+  }
+  .hero-text{
+    width: 55%;
+    left: 300px;
+  }
+  #wrapper {
+    height: 50%;
+    width: 50%;
+  }
+  #navbar, #aNav {
+    width: 5%
+  }
+}
+.parallax {
+  /* The image used */
+  background-image: url("/media/spotlight.jpeg");
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  justify-content: center;
+  align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  align-self: center;
+  scroll-margin-top: 100px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 5%;
+  margin-top: 30px;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("/media/code_screen.avif");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border: 10 0 10 0 black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  top: 10%;
+  left: 40%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px hsla(0deg, 0%, 0%, 0.5);
+  scroll-margin-top: 300px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+td {
+  padding: 5px;
+  font-size: xx-large;
+  margin: 0 auto;
+}
+.parallax3 {
+  /* The image used */
+  background-image: url("/media/oldschool.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px;
+  overflow: hidden;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  scroll-padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#work {
+  scroll-margin-top: 200px;
+}
+
+/* stick nav */
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  #navbar {
+    width: 75%;
+    border-radius: 20px;
+    z-index: 100%;
+    font-family: 'Kanit', sans-serif;
+  }
+  
+/* work gallery */
+
+
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+
+.workImg {
+  width: 600px;
+  height: 300px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  box-shadow: 0 0 0 400px inset, 0 0 5px grey;
+  /* hover out transition */
+  transition: box-shadow .5s;
+  float: left;
+  margin: 10px;
+  margin-left: 100px;
+}
+
+
+.workImg::after {
+  width: 90%;
+  height: 90%;
+  display: block;
+  white-space: pre;
+  font: 15pt 'sigmar one';
+  color: white;
+  border: 2px solid;
+  text-align: center;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* hover out transition */
+  transition: opacity .5s .1s;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+
+
+.workImg:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow .5s ease-in-out;
+  transform: scale(1.2);
+}
+
+
+
+.workImg:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#mancala {
+  background-image: url("https://i.imgur.com/1ZuI9Mu.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#mancala::after {
+  content: 'Avengers Infinity War - Marvel Mancala \A \A An HTML, CSS, & JavaScript based browser game featuring Marvel characters and animations centered around gathering Infinity Stones in the game of Mancala \A \A Hover to View Image  |  Click to Go to GitHub Repo';
+  white-space: pre-wrap;
+}
+#wellworn {
+  background-image: url("https://i.imgur.com/A1Mn5XO.png");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#wellworn::after {
+  content: 'Well Worn Shoes \A \A A social media website created using Express JS, Node JS, Google Auth, and MongoDB deployed on Heroku that allows users to sign in via 3rd party OAuth and share travel pictures through posts, comment on posts, and even search or favorite posts \A \A Hover to View Image  |  Click to Go to GitHub Repo';
+  white-space: pre-wrap;
+}
+#instrument {
+  background-image: url("/media/instrument-collector.png");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#instrument::after {
+  content: 'Instrument Collector \A \A  Using Python, PostgreSQL and Django. A user centric full CRUD app that allows users to create, update and delete their instrument collection, as well as the accessories and practice sessions. \A \A Hover to View Image  |  Click to Go to Heroku App';
+  white-space: pre-wrap;
+}
+@media only screen and (min-width: 1600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    overflow:hidden;
+    scroll-behavior: smooth;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  #section1, #section2, #section3 {
+      width: 100%;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      margin: 20px 0;
+  }
+      
+  .item {
+      width: 500px;  
+      padding: 0 2px;
+      transition: all;
+      margin-left: 150px;
+      margin-right: 150px;
+  }     
+     
+  .arrow__btn {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 6em;
+      background:rgb(0,0,0);
+      width: 90px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+  }
+        
+  .arrow__btn:nth-of-type(1) {
+  top:0; bottom:0; left:0;
+  background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+  .arrow__btn:nth-of-type(2) {
+  top:0; bottom:0; right: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    overflow:hidden;
+    scroll-behavior: smooth;
+  }
+  
+  #section1, #section2, #section3 {
+      width: 100%;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      margin: 20px 0;
+  }
+      
+  .item {
+      width: 500px;  
+      padding: 0 2px;
+      transition: all;
+      margin-right: 150px;
+  }     
+     
+  .arrow__btn {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 6em;
+      background:rgb(0,0,0);
+      width: 80px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+  }
+        
+  .arrow__btn:nth-of-type(1) {
+  top:0; bottom:0; left:0;
+  background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+  .arrow__btn:nth-of-type(2) {
+  top:0; bottom:0; right: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .arrow__btn {
+    display:none;
+  }
+}
