@@ -280,6 +280,18 @@ td {
   content: 'Instrument Collector \A \A  Using Python, PostgreSQL and Django. A user centric full CRUD app that allows users to create, update and delete their instrument collection, as well as the accessories and practice sessions. \A \A Hover to View Image  |  Click to Go to Heroku App';
   white-space: pre-wrap;
 }
+#dashboard {
+  background-image: url("https://i.imgur.com/Akoigzn.png");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#dashboard::after {
+  content: 'Project Dashboard \A \A  This fully responsive and dynamic Dashboard React app features Syncfusion components and is styled using the Tailwind library. The user can browse through a dynamic sidebar, pick light or dark themes, and change the theme color. The Syncfusion elements include different Pages, Apps, and Charts that the user can manipulate. \A \A Hover to View Image  |  Click to Go to GitHub Page';
+  white-space: pre-wrap;
+}
 @media only screen and (min-width: 1600px) {
   .wrapper {
     display: grid;
